@@ -1,0 +1,71 @@
+name: academeplus
+description: A new Flutter project.
+version: 1.0.0+1
+
+environment:
+  sdk: '>=2.19.5 <3.0.0'
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+  flutter_svg: ^2.0.4
+  flutter_auth: ^0.0.1
+  http: ^0.13.5
+  fluttertoast: ^8.2.1
+  avoid_keyboard: ^0.3.0
+  flutter_launcher_icons: ^0.13.0
+  flutter_native_splash: ^2.2.19
+  bottom_navy_bar: ^5.6.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+    - assets/icons/
+
+fonts:
+ - family : poppins
+   fonts:
+     - asset: assets/fonts/Poppins-Black.ttf
+     - asset: assets/fonts/Poppins-Bold.ttf
+     - asset: assets/fonts/Poppins-Light.ttf
+     - asset: assets/fonts/Poppins-Medium.ttf
+     - asset: assets/fonts/Poppins-Regular.ttf
+
+flutter_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/images/cap.png"
+  min_sdk_android: 21 # android min sdk min:16, default 21
+  web:
+    generate: true
+    image_path: "assets/images/cap.png"
+    background_color: "#hexcode"
+    theme_color: "#hexcode"
+  windows:
+    generate: true
+    image_path: "assets/images/cap.png"
+    icon_size: 48 # min:48, max:256, default: 48
+  macos:
+    generate: true
+    image_path: "assets/images/cap.png"
+
+flutter_native_splash:
+  color: "#ffffff"
+  image: "assets/images/capp.png"
+  color_dark: "#121212"
+  image_dark: "assets/images/capp.png"
+
+  android_12:
+    image: "assets/images/capp.png"
+    icon_background_color: "#ffffff"
+    image_dark: "assets/images/capp.png"
+    icon_background_color_dark: "#121212"
+
+  web: false
+  fullscreen: true
